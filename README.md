@@ -29,4 +29,6 @@ m.get('x') //2
 ```
 The hash table works pretty fast and does not go longer than even 1 second, it can handle lots of pairs so good luck :)
 
+# Requirements
 
+The only module you require is: string-hash
