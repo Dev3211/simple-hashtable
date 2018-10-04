@@ -27,6 +27,24 @@ m.set('x', 1)
 m.overwrite('x', 2)
 m.get('x') //2
 ```
+
+```
+var class = require('class.js');
+
+let m = new class()
+
+m.set('x', 1)
+m.set('y', 5)
+m.overwrite('y', 6)
+m.overwrite('x', 2)
+
+let test = m.get('x')
+let test1 = m.get('y')
+
+console.log(test) //2
+console.log(test1) //6
+```
+
 The hash table works pretty fast and does not go longer than even 1 second, it can handle lots of pairs so good luck :)
 
 # Requirements
